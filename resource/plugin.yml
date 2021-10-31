@@ -4,3 +4,8 @@ description: ${pom.description}
 website: ${pom.url}
 author: Lightnew
 main: fr.lightnew.CustomShop
+commands:
+  shop:
+    permission: customshop.command.shop
+  eco:
+    permission: customshop.command.eco
