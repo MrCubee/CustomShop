@@ -20,6 +20,7 @@ public class InventoryEventBuy implements Listener {
     public void onInteract(InventoryClickEvent event) {
         Player player = (Player) event.getWhoClicked();
         ItemStack item = event.getCurrentItem();
+        ItemStack targetItem;
         Inventory inv = event.getInventory();
 
         /**METTRE A ITEM DANS GUIBUY LE PRIX EN LORE ET AU FURE ET A MESURE L'AUGMENTER OU BAISSER*/
@@ -42,11 +43,14 @@ public class InventoryEventBuy implements Listener {
                     GuiBuy.addToItemToBuy(64);
                     GuiBuy.itemToBy.setAmount(GuiBuy.addToItemToBuy(64));
 
-                    ItemMeta meta = GuiBuy.itemToBy.getItemMeta();
-                    List<String> tt = new ArrayList<>();
-                    tt.add("TEST LORE");
-                    meta.setLore(tt);
-                    GuiBuy.itemToBy.setItemMeta(meta);
+                    targetItem = event.getInventory().getItem(13);
+                    if (targetItem != null) {
+                        ItemMeta meta = targetItem.getItemMeta();
+                        List<String> tt = new ArrayList<>();
+                        tt.add("TEST LORE");
+                        meta.setLore(tt);
+                        targetItem.setItemMeta(meta);
+                    }
 
                     Bukkit.getConsoleSender().sendMessage("TEST DE GREEND STACK (64) -> " + GuiBuy.itemToBy.getAmount());
                     Bukkit.getConsoleSender().sendMessage("LORE DE GREEND STACK -> " + GuiBuy.itemToBy.getItemMeta().getLore());
