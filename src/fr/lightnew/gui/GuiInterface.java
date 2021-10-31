@@ -13,8 +13,6 @@ import org.bukkit.inventory.ItemFlag;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
-import java.io.File;
-
 public class GuiInterface {
     /**CONSTRUCT ITEMS*/
     //Items | Clay

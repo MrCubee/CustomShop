@@ -1,7 +1,6 @@
 package fr.lightnew.events;
 
 import fr.lightnew.gui.GuiBuy;
-import fr.lightnew.utils.InvUpdate;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Sound;

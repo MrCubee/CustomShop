@@ -1,7 +1,5 @@
 package fr.lightnew.files;
 
-import org.bukkit.ChatColor;
-import org.bukkit.Material;
 import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.configuration.file.YamlConfiguration;
 
