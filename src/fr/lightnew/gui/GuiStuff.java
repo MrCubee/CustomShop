@@ -1,6 +1,5 @@
 package fr.lightnew.gui;
 
-import fr.lightnew.files.FolderDye;
 import fr.lightnew.files.FolderStuff;
 import fr.lightnew.utils.ColorList;
 import org.bukkit.Bukkit;

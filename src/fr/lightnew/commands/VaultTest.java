@@ -1,9 +1,7 @@
 package fr.lightnew.commands;
 
 import fr.lightnew.CustomShop;
-import fr.lightnew.economy.Trading;
 import fr.lightnew.economy.VerifyBalance;
-import fr.lightnew.files.FolderBlocks;
 import net.milkbowl.vault.economy.Economy;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
